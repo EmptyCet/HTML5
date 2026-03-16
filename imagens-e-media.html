@@ -11,6 +11,24 @@
     <!-- Metadata para chamar o favicon-->
      <link rel="icon" href="imagens/favicon.ico" type="image/x-icon">
     <body>
-        
+        <h1>IMAGES AND MEDIA</h1>
+        <h2>Imagem - Basic Syntax</h2>
+        <img src="imagens/favicon.png" alt="This is an image of a favicon. You're probably wondering what a favicon even is, well.. A favicon is a small icon that represents a website, usually displayed in the browser tab and bookmarks. It's like the face of the website! That's amezing! This is my website's favicon, it's my favorite icon! heehee! :3" width="200px" height="200px">
+
+        <h4>Good practices for Image integration</h4>
+        <ul>
+            <li>Always use the alt attribute to provide a description of the image for accessibility and SEO purposes.</li>
+            <li>Use appropriate file formats (e.g., JPEG for photos, PNG for graphics with transparency).</li>
+            <li>Optimize images for web use to reduce file size and improve loading times.</li>
+            <li>Use descriptive file names for images</li>
+            <li>Use CSS whenever possible to control image sizes to keep the HTML code clean.</li>
+        </ul>
+
+        <h3>PICTURE - Responsive Images</h3>
+        <picture>
+            <source media="(max-width: 600px)" srcset="imagens/favicon_S3.png">
+            <source media="(max-width: 1000px)" srcset="imagens/favicon_S2.png">
+            <img src="imagens/favicon.png" alt="Responsive image example">
+        </picture>
     </body>
 </html>
