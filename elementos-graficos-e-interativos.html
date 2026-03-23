@@ -8,4 +8,103 @@
         <meta name="description" content="Examples of graphics and interactive elements in HTML">
         <link rel="icon" href="imagens/favicon.ico" type="image/x-icon">
     </head>
+        
+    <body style="margin: 5vw;">
+        <header>
+            <nav>
+                <h3>NAVIGATION</h3>
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li> 
+                            <a href="texto-e-conteudos.html">Text & Contents</a>
+                        </li>
+                        <li> 
+                            <a href="links-e-navegacao.html">Links & Navigation</a>
+                        </li>
+                        <li>
+                            <a href="listas-e-tabelas.html">Lists & Tables</a>
+                        </li>
+                        <li>
+                        <a href="imagens-e-media.html">Images & Media</a>
+                        </li>
+                    </ul>
+            </nav>
+        </header>
+        <br><hr>
+
+        <h1>GRAPHICS AND INTERACTIVE ELEMENTS</h1>
+        <h2>CANVAS</h2>
+        <p>O elemento <code>&#x3c;canvas&#x3e;</code> permite desenhar gráficos, animações e outros elementos visuais dinâmicos, utilizando o JavaScript.</p>
+
+        <h3>Canvas</h3>
+        <canvas id="myCanvas" width="500" height="300">
+            Your browser does not support the canvas element.
+        </canvas>
+
+        <h3>Exemplo de um desenho simples</h3>
+        <canvas id="myCanvas2" width="500" height="300">
+            Your browser does not support the canvas element.
+        </canvas>
+
+        <script>
+            //Define function
+            function draw(){
+                const canvas = document.getElementById('myCanvas2');
+                const rectangle = canvas.getContext('2d');
+
+                rectangle.fillStyle = 'blue';
+                rectangle.fillRect(160, 100, 100, 100);
+                rectangle.fillStyle = 'blue';
+                rectangle.fillRect(40, 100, 100, 100);
+                rectangle.fillStyle = 'blue';
+                rectangle.fillRect(280, 100, 100, 100);
+                }
+            draw(); //CALL function
+        </script>
+
+        <h3>Overlapping elements</h3>
+        <canvas id="overlap" width="500" height="500">
+            Your browser does not support the canvas element.
+        </canvas>
+        
+        <script> 
+            function drawOverlap(){
+                const canvas = document.getElementById('overlap');
+                const ctx = canvas.getContext('2d')
+
+                ctx.fillStyle = '#FF0099';
+                ctx.fillRect(50, 50, 200, 200);
+
+                ctx.fillStyle = 'rgba(255, 0, 102, 0.5)';
+                ctx.fillRect(100, 100, 200, 200);
+
+                ctx.fillStyle = 'rgba(255, 0, 102, 0.2)';
+                ctx.fillRect(150, 150, 200, 200);
+
+                ctx.fillStyle = 'rgba(255, 0, 102, 0.05)';
+                ctx.fillRect(200, 200, 200, 200);
+            }
+            drawOverlap();
+        </script>
+
+        <h3>Overlapping elements</h3>
+        <canvas id="RectShape" width="500" height="500">
+            Your browser does not support the canvas element.
+        </canvas>
+        
+        <script> 
+            function draw(){
+                const canvas = document.getElementById('RectShape');
+                const cty = canvas.getContext('2d')
+
+                cty.fillRect(50, 50, 200, 200);
+                cty.fillRect(150, 150, 200, 200);
+                cty.clearRect(100, 100, 200, 200);
+            }
+            draw();
+        </script>
+    </body>
+
 </html>
