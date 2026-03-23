@@ -7,10 +7,34 @@
         <title>AWESOME SITE [MEDIA]</title>
         <meta name="description" content="Links to images and media content">
     </head>
+    
 
     <!-- Metadata para chamar o favicon-->
      <link rel="icon" href="imagens/favicon.ico" type="image/x-icon">
-    <body>
+    <body style="margin: 5vw;">
+        <header>
+            <nav>
+                <h3>NAVIGATION</h3>
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li> 
+                            <a href="texto-e-conteudos.html">Text & Contents</a>
+                        </li>
+                        <li> 
+                            <a href="links-e-navegacao.html">Links & Navigation</a>
+                        </li>
+                        <li>
+                            <a href="listas-e-tabelas.html">Lists & Tables</a>
+                        </li>
+                        <li>
+                        <a href="imagens-e-media.html">Images & Media</a>
+                        </li>
+                    </ul>
+            </nav>
+        </header>
+        <br><hr>
         <h1>IMAGES AND MEDIA</h1>
         <h2>Imagem - Basic Syntax</h2>
         <img src="imagens/favicon.png" alt="This is an image of a favicon. You're probably wondering what a favicon even is, well.. A favicon is a small icon that represents a website, usually displayed in the browser tab and bookmarks. It's like the face of the website! That's amezing! This is my website's favicon, it's my favorite icon! heehee! :3" width="200px" height="200px">
@@ -30,7 +54,7 @@
             <source media="(max-width: 1000px)" srcset="imagens/favicon_S2.png">
             <img src="imagens/favicon.png" alt="Responsive image example">
         </picture>
-        
+        <hr>
         <h2>AUDIO and VIDEO</h2>
         <h3>Audo - Basic Syntax</h3>
 
@@ -56,8 +80,17 @@
             </li>
             <li>Don't autoplay, especially audio, it can be annoying.</li>
         </ol>
+        <hr>
+        <h3>Video - Complete Syntax</h3>
 
+        <h4>Ball Bounce - Motion design.</h2>
+        <video controls width="560" height="315" poster="imagens/Ball_Bounce.png">
+            <source src="imagens/Ball_Bounce.mp4" type="video/mp4">
+            <source src="imagens/Ball_Bounce.webm" type="video/webm">
+        </video>
 
-
+        <h3>Vídeo - Embeded (Youtube)</h3>
+        <!--Tirado diretamente do "Embed" Share option do youtube-->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/SuCYsNERsgA?si=2q8C2ejpgiWTdh7X" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </body>
 </html>
