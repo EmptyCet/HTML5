@@ -1,0 +1,44 @@
+@font-face {
+  font-family: 'Degular-Bold';
+  src: url('fonts/Degular-Bold.otf') format('opentype');
+}
+
+
+/* estilos do body */
+body {
+    font-family: Helvetica, Geneva, Tahoma, sans-serif;
+    color: rgb(246, 245, 245);
+    background-color: rgb(15, 15, 16);
+}
+
+h1{
+    font-family: Degular-Bold, Helvetica, sans-serif;
+    font-style: bold;
+    color: rgb(246, 245, 245);
+}
+
+h2 {
+    font-family: Helvetica; 
+}
+
+
+
+a{
+    color: rgb(249, 224, 0);
+}
+
+a:hover{
+    color : rgb(255, 255, 251)
+}
+
+h1{
+    font-size: 2.5rem; /* em vez de um valor absoluto como "36px", usamos aqui 3rem, para editar que h1 é sempre 2.5 vezes o tamanho do body */
+}
+
+@media only screen and (min-width:992px) { /* THIS is ACTIVE until it hits the MINIMUM width of 992px. When it turns smaller, the code above is active instead. */ 
+    h1{
+        font-size: 3.5rem;
+    }
+} 
+
+
